@@ -30,7 +30,7 @@ DRIVESIZE=`df -BG $DRIVE --output=size | head -n 2 | tail -n 1`
 
 if [ $DRIVETYPE = "part" ]
 then
-    DRIVEDETAILS=`df $DRIVE -BM --output=used,fstype,target | tail -n 1`
+	DRIVEDETAILS=`df $DRIVE -BM --output=used,fstype,target | tail -n 1`
 else
 	DRIVEDETAILS=``
 fi
